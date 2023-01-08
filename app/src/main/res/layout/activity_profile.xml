@@ -97,14 +97,13 @@
         android:id="@+id/moveouttupdateprofile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Want To Update Your Profile?"
-        android:layout_centerInParent="true"
         android:layout_below="@id/viewusername"
+        android:layout_centerInParent="true"
         android:layout_marginTop="50dp"
         android:paddingLeft="20dp"
+        android:paddingTop="10dp"
         android:paddingRight="20dp"
         android:paddingBottom="10dp"
-        android:paddingTop="10dp"
-        android:textColor="#303030"
-        />
+        android:text="Want To Update Your Profile?"
+        android:textColor="#303030" />
 </RelativeLayout>

@@ -1,5 +1,6 @@
 package com.rekom.CureCompanion;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -42,7 +43,7 @@ public class chatFragment extends Fragment {
         firebaseFirestore = FirebaseFirestore.getInstance();
         mrecycleview = v.findViewById(R.id.recyleview);
 
-        Query query = firebaseFirestore.collection("Users");
+        Query query = firebaseFirestore.collection("Users").whereNotEqualTo( "uid",firebaseAuth.getUid());
         FirestoreRecyclerOptions<firebaseModel> allusername = new FirestoreRecyclerOptions.Builder<firebaseModel>().setQuery(query, firebaseModel.class).build();
 
         chatAdapter = new FirestoreRecyclerAdapter<firebaseModel, NoteViewHolder>(allusername) {
@@ -66,7 +67,11 @@ public class chatFragment extends Fragment {
                 noteViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Toast.makeText(getActivity(), "Item is clicked", Toast.LENGTH_SHORT).show();
+                        Intent intent=new Intent(getActivity(),specificchat.class);
+                        intent.putExtra( "name", firebaseModel.getName());
+                        intent.putExtra( "receiveruid",firebaseModel.getUid());
+                        intent.putExtra( "imageuri", firebaseModel.getImage());
+                        startActivity(intent);
                     }
                 });
             }
