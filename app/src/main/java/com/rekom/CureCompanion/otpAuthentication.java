@@ -79,7 +79,7 @@ public class otpAuthentication extends AppCompatActivity {
                 {
                     mProgressOfOtpAuth.setVisibility(View.INVISIBLE);
                     Toast.makeText(getApplicationContext(), "Login Success", Toast.LENGTH_SHORT).show();
-                    Intent intent=new Intent(otpAuthentication.this,setProfile.class);
+                    Intent intent=new Intent(otpAuthentication.this, setProfile.class);
                     startActivity(intent);
                     finish();
                 }

@@ -60,7 +60,6 @@ public class specificchat extends AppCompatActivity {
     ArrayList<Messages> messagesArrayList;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
@@ -69,11 +68,10 @@ public class specificchat extends AppCompatActivity {
 
         mgetmessage=findViewById(R.id.getmessage);
         msendmessagecardview =findViewById(R.id.cardviewofsendmessage);
-        msendmessagebutton=findViewById( R.id.imageviewsendmessage );
+        msendmessagebutton=findViewById(R.id.imageviewsendmessage);
         mtoolbarofspecificchat =findViewById( R.id.toolbarofspecificchat );
         mnameofspecificuser = findViewById( R.id.Nameofspecificuser);
         mimageviewofspecificuser=findViewById( R.id.specificuserimageinimageview);
-
         mbackbuttonofspecificchat=findViewById( R.id.backbuttonofspecificchat );
 
         messagesArrayList=new ArrayList<>();
@@ -92,8 +90,6 @@ public class specificchat extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText( getApplicationContext(),"Toolbar is Clicked", Toast.LENGTH_SHORT ).show();
-
-
             }
         } );
 
@@ -105,7 +101,6 @@ public class specificchat extends AppCompatActivity {
         msenderuid=firebaseAuth.getUid();
         mrecieveruid = getIntent().getStringExtra( "receiveruid" );
         mrecievername = getIntent().getStringExtra( "name" );
-
 
         senderroom=msenderuid+mrecieveruid;
         recieverroom=mrecieveruid+msenderuid;
@@ -126,10 +121,8 @@ public class specificchat extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
             }
         } );
-
 
         mbackbuttonofspecificchat.setOnClickListener( new View.OnClickListener() {
             @Override
@@ -187,16 +180,8 @@ public class specificchat extends AppCompatActivity {
 
                     mgetmessage.setText( null );
                 }
-
-
-
-
-
             }
-        } );
-
-
-
+        });
     }
 
     @Override

@@ -100,7 +100,7 @@ public class setProfile extends AppCompatActivity {
                     mProgressBarSetProfile.setVisibility(View.VISIBLE);
                     sendDataFormNewUser();
                     mProgressBarSetProfile.setVisibility(View.INVISIBLE);
-                    Intent intent=new Intent(setProfile.this,chatActivity.class);
+                    Intent intent=new Intent(setProfile.this, chatActivity.class);
                     startActivity(intent);
                     finish();
                 }
@@ -123,8 +123,8 @@ public class setProfile extends AppCompatActivity {
         FirebaseDatabase firebaseDatabase=FirebaseDatabase.getInstance();
         DatabaseReference databaseReference=firebaseDatabase.getReference(firebaseAuth.getUid());
 
-        userProfile muserProfile=new userProfile(name,firebaseAuth.getUid());
-        databaseReference.setValue(muserProfile);
+        UserProfileModel muserProfileModel =new UserProfileModel(name,firebaseAuth.getUid());
+        databaseReference.setValue(muserProfileModel);
         Toast.makeText(getApplicationContext(), "User Profile Added Succesfully", Toast.LENGTH_SHORT).show();
         sendImageStorage();
 

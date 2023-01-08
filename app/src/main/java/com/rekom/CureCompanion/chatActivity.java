@@ -36,8 +36,8 @@ public class chatActivity extends AppCompatActivity {
 
         tabLayout=findViewById(R.id.include);
         mchat=findViewById(R.id.chat);
-        mcall=findViewById(R.id.calls);
-        mstatus=findViewById(R.id.status);
+        mcall=findViewById(R.id.medicines);
+        mstatus=findViewById(R.id.profile);
         viewPager=findViewById(R.id.fragmentcontainer);
 
         firebaseFirestore=FirebaseFirestore.getInstance();

@@ -51,8 +51,7 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-
-        mviewuserimageinimageview = findViewById(R.id.viewuserimage);
+        mviewuserimageinimageview = findViewById(R.id.viewuserimageinimageview);
         mviewusername = findViewById(R.id.viewusername);
         mmovetoupdateprofile=findViewById(R.id.moveouttupdateprofile);
         firebaseFirestore = FirebaseFirestore.getInstance();
@@ -83,7 +82,8 @@ public class ProfileActivity extends AppCompatActivity {
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                userProfile muserprofile = snapshot.getValue(userProfile.class);
+                UserProfileModel muserprofile = snapshot.getValue(UserProfileModel.class);
+//                mviewusername.setText(muserprofile.getUsername());
                 mviewusername.setText(muserprofile.getUsername());
             }
 

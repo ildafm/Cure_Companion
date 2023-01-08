@@ -49,12 +49,12 @@
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/viewuserimage"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_above="@+id/viewusername"
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="80dp"
-        android:id="@+id/viewuserimage"
         android:layout_centerHorizontal="true"
         app:cardCornerRadius="130dp"
         >
@@ -91,7 +91,8 @@
         android:clickable="false"
         android:enabled="false"
         android:hint="Enter Your Name Here"
-        android:inputType="textCapWords"></EditText>
+        android:inputType="textCapWords">
+    </EditText>
 
     <TextView
         android:id="@+id/moveouttupdateprofile"

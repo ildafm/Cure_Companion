@@ -38,7 +38,7 @@
         android:gravity="center"
         android:text="Hello, Welcome!"
         android:textColor="@color/black"
-        android:textSize="35sp" />
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/command"
@@ -71,7 +71,7 @@
     <EditText
         android:id="@+id/getphonenumber"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_below="@+id/countrycodepicker"
         android:layout_centerHorizontal="true"
@@ -95,7 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/getphonenumber"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/button_orange_bg"
         android:fontFamily="@font/poppins_semibold"
@@ -110,7 +110,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/sendotpbutton"
-        android:layout_marginTop="20dp"
         android:visibility="invisible">
 
     </ProgressBar>

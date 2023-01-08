@@ -19,8 +19,8 @@ public class PagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0: return new chatFragment();
-            case 1: return new statusFragment();
-            case 2 : return new callFragment();
+            case 1: return new ObatFragment();
+            case 2 : return new ProfileFragment();
             default: return null;
         }
     }

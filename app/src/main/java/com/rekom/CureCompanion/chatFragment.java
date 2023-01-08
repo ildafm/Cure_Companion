@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -37,13 +36,13 @@ public class chatFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.chatfragment, container, false);
+        View v = inflater.inflate(R.layout.chat_fragment, container, false);
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseFirestore = FirebaseFirestore.getInstance();
         mrecycleview = v.findViewById(R.id.recyleview);
 
-        Query query = firebaseFirestore.collection("Users").whereNotEqualTo( "uid",firebaseAuth.getUid());
+        Query query = firebaseFirestore.collection("Users");
         FirestoreRecyclerOptions<firebaseModel> allusername = new FirestoreRecyclerOptions.Builder<firebaseModel>().setQuery(query, firebaseModel.class).build();
 
         chatAdapter = new FirestoreRecyclerAdapter<firebaseModel, NoteViewHolder>(allusername) {
@@ -89,7 +88,6 @@ public class chatFragment extends Fragment {
         linearLayoutManager.setOrientation(RecyclerView.VERTICAL);
         mrecycleview.setLayoutManager(linearLayoutManager);
         mrecycleview.setAdapter(chatAdapter);
-
         return v;
     }
 

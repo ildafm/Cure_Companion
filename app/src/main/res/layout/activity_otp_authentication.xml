@@ -8,66 +8,73 @@
     android:background="@color/white">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Enter The Otp Which You Received"
-        android:textSize="20dp"
+        android:layout_marginTop="120dp"
+        android:text="Check Your SMS. We Already send the OTP"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_semibold"
         android:textAlignment="center"
         android:textStyle="bold"
-        android:padding="20dp"
+        android:padding="15dp"
         android:id="@+id/textheading">
 
     </TextView>
 
     <EditText
+        android:id="@+id/getotp"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/textheading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="120dp"
         android:layout_marginLeft="120dp"
-        android:layout_margin="120dp"
-        android:hint="Enter the otp here..."
-        android:textColor="@color/black"
-        android:id="@+id/getotp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="120dp"
+        android:hint="Enter Your OTP"
+        android:inputType="number"
         android:textAlignment="center"
-        android:inputType="number">
-
+        android:textColor="@color/black">
     </EditText>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="chgange You number?"
-        android:id="@+id/changenumber"
-        android:layout_below="@+id/getotp"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:layout_marginTop="15dp"
-        >
 
-    </TextView>
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_below="@+id/changenumber"
+        android:layout_above="@+id/changenumber"
         android:id="@+id/verifyotp"
         android:layout_centerHorizontal="true"
         android:textColor="@color/white"
         android:paddingLeft="40dp"
         android:layout_marginTop="50dp"
         android:paddingRight="40dp"
-        android:text="Verifify OTP">
+        android:background="@drawable/button_orange_bg"
+        android:text="Verify OTP"
+        android:textSize="18sp"
+        android:textAllCaps="false" />
 
-    </Button>
+
+    <TextView
+        android:id="@+id/changenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Your number?"
+        android:layout_below="@+id/getotp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_marginTop="15dp">
+    </TextView>
 
     <ProgressBar
-
+        android:id="@+id/progressBarOfotpAuth"
+        android:layout_below="@id/changenumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/verifyotp"
-        android:id="@+id/progressBarOfotpAuth"
         android:visibility="invisible"
         android:layout_marginTop="30dp">
     </ProgressBar>

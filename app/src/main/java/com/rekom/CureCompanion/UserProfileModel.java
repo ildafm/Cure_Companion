@@ -1,16 +1,16 @@
 package com.rekom.CureCompanion;
 
-public class userProfile {
+public class UserProfileModel {
 
     public String username,userUID;
     public String email;
     public String number;
     public String domicile;
 
-    public userProfile(String name, String uid) {
+    public UserProfileModel(String name, String uid) {
     }
 
-    public userProfile(String username, String userUID, String email, String number, String domicile) {
+    public UserProfileModel(String username, String userUID, String email, String number, String domicile) {
         this.username = username;
         this.userUID = userUID;
         this.email = email;
