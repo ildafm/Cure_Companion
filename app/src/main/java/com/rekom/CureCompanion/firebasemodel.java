@@ -1,15 +1,15 @@
 package com.rekom.CureCompanion;
 
-public class firebasemodel {
+public class firebaseModel {
     String name;
     String image;
     String uid;
     String status;
 
-    public firebasemodel() {
+    public firebaseModel() {
     }
 
-    public firebasemodel(String name, String image, String uid, String status) {
+    public firebaseModel(String name, String image, String uid, String status) {
         this.name = name;
         this.image = image;
         this.uid = uid;
