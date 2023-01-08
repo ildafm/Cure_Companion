@@ -46,8 +46,7 @@ dependencies {
     implementation 'com.hbb20:ccp:2.5.3'
 
     //lottie
-    def lottieVersion = "5.2.0"
-    implementation "com.airbnb.android:lottie:$lottieVersion"
+    implementation 'com.airbnb.android:lottie:5.2.0'
 
     //menambahkan retrofit untuk rest api
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'

@@ -9,27 +9,25 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:layout_marginTop="0dp"
-        android:background="#075e54"
+        android:background="@color/white"
+        android:layout_margin="10dp"
         android:id="@+id/toolbar">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center_vertical">
-            <TextView
+            >
+
+            <ImageView
+                android:id="@+id/myapptext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="MyChatApp"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:id="@+id/myapptext"
+                android:src="@drawable/logo_long"
                 android:textColor="@color/white">
 
-            </TextView>
+            </ImageView>
 
         </RelativeLayout>
-
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -41,7 +39,7 @@
         app:tabTextColor="#77a3a7"
         app:tabSelectedTextColor="@color/white"
         app:tabIndicatorColor="@color/white"
-        android:backgroundTint="#075e54"
+        android:backgroundTint="@color/blue_main"
         app:tabIndicatorHeight="0dp"
         android:layout_marginTop="0dp"
 
@@ -51,8 +49,8 @@
             android:layout_height="wrap_content"
             android:text="Chats"
             android:id="@+id/chat">
-
         </com.google.android.material.tabs.TabItem>
+
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
