@@ -1,14 +1,14 @@
-package com.rekom.myapplication;
+package com.rekom.CureCompanion;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class setProfile extends AppCompatActivity {
+public class SplashScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.activity_set_profile );
+        setContentView( R.layout.activity_splash_screen );
     }
 }

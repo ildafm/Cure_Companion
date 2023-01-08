@@ -42,16 +42,14 @@
     </androidx.cardview.widget.CardView>
 
     <EditText
+        android:id="@+id/getusername"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:inputType="textCapWords"
-        android:hint="Enter Your Name Here"
         android:layout_centerInParent="true"
-        android:id="@+id/getusername"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
-        >
-    </EditText>
+        android:hint="Enter Your Name Here"
+        android:inputType="textCapWords"></EditText>
 
     <Button
         android:layout_width="wrap_content"
@@ -70,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/saveprofile"
-        android:id="@+id/progressbarofmin"
+        android:id="@+id/progressbarofsetProfile"
         android:visibility="invisible"
         android:layout_marginTop="30dp">
     </ProgressBar>

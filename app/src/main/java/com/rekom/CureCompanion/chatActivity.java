@@ -1,4 +1,4 @@
-package com.rekom.myapplication;
+package com.rekom.CureCompanion;
 
 import androidx.appcompat.app.AppCompatActivity;
 

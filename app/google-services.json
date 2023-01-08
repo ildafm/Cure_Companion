@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "800939396571",
+    "project_id": "curecompanion-f353f",
+    "storage_bucket": "curecompanion-f353f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800939396571:android:f543897e46aa6cd1c06bfe",
+        "android_client_info": {
+          "package_name": "com.rekom.CureCompanion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800939396571-3r32ogmpfe6hvk7s2mt61dk3cm32ra4k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rekom.CureCompanion",
+            "certificate_hash": "12e4b85224bb6bb770777134ba7a5b8351f16b28"
+          }
+        },
+        {
+          "client_id": "800939396571-v29lk276181gtsep4d7unop9elsetjl0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr3KhPhnHT1s5zG5HfmjMOwhubmlvkek4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800939396571-v29lk276181gtsep4d7unop9elsetjl0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -15,52 +15,100 @@
 
     </RelativeLayout>
 
+    <ImageView
+        android:id="@+id/logo_long"
+        android:layout_width="225dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/logo_long" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_long"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="187dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Hello, Welcome!"
+        android:textColor="@color/black"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/command"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/welcome"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Please put your valid number to create new account"
+        android:textSize="12sp" />
+
+
     <com.hbb20.CountryCodePicker
+        android:id="@+id/countrycodepicker"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        app:ccp_areaCodeDetectedCountry="true"
+        android:layout_above="@+id/centerhorizontalline"
         android:layout_centerInParent="true"
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
-        android:id="@+id/countrycodepicker"
-        app:ccp_autoDetectCountry="true"
-        android:layout_marginBottom="10dp"
-        android:layout_above="@+id/centerhorizontalline">
+        android:layout_marginBottom="-115dp"
+        app:ccp_areaCodeDetectedCountry="true"
+        app:ccp_autoDetectCountry="true">
 
     </com.hbb20.CountryCodePicker>
 
-
     <EditText
+        android:id="@+id/getphonenumber"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_below="@+id/centerhorizontalline"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="70dp"
+        android:layout_marginTop="121dp"
         android:layout_marginRight="70dp"
-        android:id="@+id/getphonenumber"
+        android:layout_gravity="center"
         android:hint="Enter Your Number"
-        android:textAlignment="center"
         android:inputType="number"
-        android:textColor="@color/black"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/centerhorizontalline">
+        android:textAlignment="center"
+        android:textColor="@color/black">
 
     </EditText>
 
     <Button
+        android:id="@+id/sendotpbutton"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_below="@+id/getphonenumber"
         android:layout_centerHorizontal="true"
-        android:id="@+id/sendotpbutton"
+        android:layout_marginTop="63dp"
         android:text="Send OTP">
+
     </Button>
 
     <ProgressBar
+        android:id="@+id/progressbarmain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/sendotpbutton"
-        android:id="@+id/progressbarofmin"
-        android:visibility="invisible"
-        android:layout_marginTop="30dp">
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible">
+
     </ProgressBar>
 </RelativeLayout>
