@@ -49,6 +49,7 @@ public class chatFragment extends Fragment {
             @Override
             protected void onBindViewHolder(@NonNull NoteViewHolder noteViewHolder, int position, @NonNull firebasemodel model) {
                 noteViewHolder.particularusername.setText(firebasemodel.getName());
+
                 String uri = firebasemodel.getImage();
 
                 Picasso.get().load(uri).into(mimageviewofuser);
