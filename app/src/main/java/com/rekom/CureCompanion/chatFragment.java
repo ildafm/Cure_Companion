@@ -95,4 +95,18 @@ public class chatFragment extends Fragment {
             mimageviewofuser = itemView.findViewById(R.id.imageviewofuser);
         }
     }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        chatAdapter.startListening();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (chatAdapter!=null){
+            chatAdapter.stopListening();
+        }
+    }
 }

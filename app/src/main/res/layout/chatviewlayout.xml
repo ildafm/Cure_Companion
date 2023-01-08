@@ -61,6 +61,15 @@
 
         </androidx.cardview.widget.CardView>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#a6a6a6"
+            android:layout_below="@id/cardviewofuser"
+            android:layout_toRightOf="@id/cardviewofuser"
+            android:layout_marginTop="-5dp"
+            ></RelativeLayout>
     </RelativeLayout>
 
 </RelativeLayout>
