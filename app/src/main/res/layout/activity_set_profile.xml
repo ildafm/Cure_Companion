@@ -49,7 +49,9 @@
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
         android:hint="Enter Your Name Here"
-        android:inputType="textCapWords"></EditText>
+        android:inputType="textCapWords">
+
+    </EditText>
 
     <Button
         android:layout_width="wrap_content"
