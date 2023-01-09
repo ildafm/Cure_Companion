@@ -33,7 +33,7 @@ import java.util.Date;
 public class specificchat extends AppCompatActivity {
 
     EditText mgetmessage;
-    ImageButton msendmessagebutton;
+    ImageButton msendmessagebutton, mbackbuttonofspecificchat;
 
     CardView msendmessagecardview;
     androidx.appcompat.widget.Toolbar mtoolbarofspecificchat;
@@ -46,8 +46,6 @@ public class specificchat extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     FirebaseDatabase firebaseDatabase;
     String senderroom,recieverroom;
-
-    ImageButton mbackbuttonofspecificchat;
 
     RecyclerView mmessagerecyclerview;
 
@@ -127,6 +125,9 @@ public class specificchat extends AppCompatActivity {
         mbackbuttonofspecificchat.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent=new Intent(specificchat.this, chatActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
                 finish();
             }
         } );
