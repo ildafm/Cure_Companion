@@ -9,29 +9,42 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_height="70dp"
         android:layout_marginBottom="10dp"
+
         android:background="@color/white">
 
-        <ImageView
-            android:id="@+id/myapptext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/logo_long">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
 
-        </ImageView>
+            <ImageView
+                android:id="@+id/myapptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="-15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/logo_long">
+            </ImageView>
 
-        <ImageButton
-            android:id="@+id/btn_profile_11"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/ic_person"
-            android:background="@drawable/flag_transparent"
-            />
+            <ImageButton
+                android:id="@+id/btn_profile_11"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/profile"
+                />
+
+        </RelativeLayout>
+
+
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -53,7 +66,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Chats"
-            android:id="@+id/chat">
+            android:id="@+id/chat"
+            >
         </com.google.android.material.tabs.TabItem>
 
         <com.google.android.material.tabs.TabItem
