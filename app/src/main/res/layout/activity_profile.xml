@@ -4,62 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    tools:context=".ProfileActivity"
+    style="@style/Theme.AppCompat.NoActionBar">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarofviewprofile"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_marginTop="0dp"
-        android:background="@color/blue_main"
-        >
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbarofviewprofile"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:background="@color/blue_main"-->
+<!--        >-->
 
-        <ImageButton
-            android:id="@+id/backbuttonofviewprofile"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:tint="@color/white"
-            android:background="@android:color/transparent"
-            android:src="@drawable/ic_arrow_back_24"
-            android:layout_centerVertical="true" />
+<!--        <ImageButton-->
+<!--            android:id="@+id/backbuttonofviewprofile"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            app:tint="@color/white"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:src="@drawable/ic_arrow_back_24"-->
+<!--            android:layout_centerVertical="true" />-->
 
-        <TextView
-            android:id="@+id/back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Your Profile"
-            android:textSize="20sp"
-            android:layout_toRightOf="@id/backbuttonofviewprofile"
-            android:layout_marginLeft="10dp"
-            android:layout_centerVertical="true"
-            android:textStyle="bold"
-            android:textColor="@color/white">
-        </TextView>
-    </androidx.appcompat.widget.Toolbar>
+<!--        <TextView-->
+<!--            android:id="@+id/back"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Your Profile"-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_toRightOf="@id/backbuttonofviewprofile"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/white">-->
+<!--        </TextView>-->
+<!--    </androidx.appcompat.widget.Toolbar>-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".activities.LoginActivity"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:orientation="vertical"
-        android:padding="30dp">
+        android:padding="30dp"
+       >
 
         <androidx.cardview.widget.CardView
             android:id="@+id/viewuserimage"
             android:layout_width="130dp"
             android:layout_height="130dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="50dp"
-            app:cardCornerRadius="130dp"
             android:layout_gravity="center"
-            >
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="130dp">
 
             <ImageView
                 android:id="@+id/viewuserimageinimageview"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/profile"
-                android:scaleType="centerCrop">
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile">
 
             </ImageView>
 
@@ -77,79 +79,79 @@
 
         <EditText
             android:id="@+id/viewusername"
-            android:drawableLeft="@drawable/ic_person"
-            android:padding="10dp"
-            android:drawablePadding="10dp"
-            android:layout_marginBottom="15dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
             android:autofillHints="username"
             android:background="@drawable/button_edit_text"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="10dp"
             android:fontFamily="@font/poppins_medium"
             android:hint="Change Your Full Name"
             android:inputType="text"
-            android:textSize="15sp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="5dp"
-            android:fontFamily="@font/poppins_medium"
-            android:text="Email"
+            android:padding="10dp"
             android:textSize="15sp" />
 
-        <EditText
-            android:id="@+id/viewemail"
-            android:drawableLeft="@drawable/ic_email"
-            android:padding="10dp"
-            android:drawablePadding="10dp"
-            android:layout_marginBottom="15dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:autofillHints="emailAddress"
-            android:background="@drawable/button_edit_text"
-            android:fontFamily="@font/poppins_medium"
-            android:hint="Change Your Email"
-            android:inputType="text"
-            android:textSize="15sp"/>
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:layout_marginBottom="5dp"-->
+        <!--            android:fontFamily="@font/poppins_medium"-->
+        <!--            android:text="Email"-->
+        <!--            android:textSize="15sp" />-->
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/viewemail"-->
+        <!--            android:drawableLeft="@drawable/ic_email"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:drawablePadding="10dp"-->
+        <!--            android:layout_marginBottom="15dp"-->
+        <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:autofillHints="emailAddress"-->
+        <!--            android:background="@drawable/button_edit_text"-->
+        <!--            android:fontFamily="@font/poppins_medium"-->
+        <!--            android:hint="Change Your Email"-->
+        <!--            android:inputType="text"-->
+        <!--            android:textSize="15sp"/>-->
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="5dp"
-            android:fontFamily="@font/poppins_medium"
-            android:text="Domicile"
-            android:textSize="15sp" />
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:layout_marginBottom="5dp"-->
+        <!--            android:fontFamily="@font/poppins_medium"-->
+        <!--            android:text="Domicile"-->
+        <!--            android:textSize="15sp" />-->
 
 
-        <EditText
-            android:id="@+id/viewdomicile"
-            android:drawableLeft="@drawable/ic_home"
-            android:padding="10dp"
-            android:drawablePadding="10dp"
-            android:layout_marginBottom="30dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:autofillHints="password"
-            android:background="@drawable/button_edit_text"
-            android:fontFamily="@font/poppins_medium"
-            android:hint="Change Your Domicile"
-            android:inputType="text"
-            android:textSize="15sp"/>
+        <!--        <EditText-->
+        <!--            android:id="@+id/viewdomicile"-->
+        <!--            android:drawableLeft="@drawable/ic_home"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:drawablePadding="10dp"-->
+        <!--            android:layout_marginBottom="30dp"-->
+        <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:autofillHints="password"-->
+        <!--            android:background="@drawable/button_edit_text"-->
+        <!--            android:fontFamily="@font/poppins_medium"-->
+        <!--            android:hint="Change Your Domicile"-->
+        <!--            android:inputType="text"-->
+        <!--            android:textSize="15sp"/>-->
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/moveouttupdateprofile"
@@ -158,12 +160,12 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="15dp"
-            android:textColor="@color/white"
             android:background="@drawable/button_orange_bg"
             android:fontFamily="@font/poppins_semibold"
             android:text="Edit Profile"
-            android:textSize="15sp"
-            android:textAllCaps="false"/>
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
 
         <ProgressBar
             android:id="@+id/progress_bar"
@@ -171,8 +173,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:visibility="gone"
-            />
+            android:visibility="gone" />
 
 
     </LinearLayout>

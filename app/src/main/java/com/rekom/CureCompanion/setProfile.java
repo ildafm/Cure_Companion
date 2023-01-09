@@ -56,9 +56,6 @@ public class setProfile extends AppCompatActivity {
 
     ProgressBar mProgressBarSetProfile;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

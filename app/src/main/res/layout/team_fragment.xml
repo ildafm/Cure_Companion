@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:fontFamily="@font/poppins_bold"
             android:text="Our Team"
             android:textColor="@color/white"
@@ -41,7 +41,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="130dp"
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="30dp"
             android:elevation="3dp"
@@ -53,7 +53,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="310dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/button_white"
@@ -89,22 +89,6 @@
                     android:textSize="15sp" />
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:background="@color/abu" />
-
-
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:background="@color/abu" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -134,9 +118,9 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingLeft="20dp"
-                android:paddingTop="10dp"
+                android:paddingTop="15dp"
                 android:paddingRight="20dp"
-                android:paddingBottom="10dp">
+                android:paddingBottom="15dp">
 
                 <ImageView
                     android:layout_width="30dp"
@@ -159,9 +143,9 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingLeft="20dp"
-                android:paddingTop="10dp"
+                android:paddingTop="15dp"
                 android:paddingRight="20dp"
-                android:paddingBottom="10dp">
+                android:paddingBottom="15dp">
 
                 <ImageView
                     android:layout_width="30dp"
@@ -174,8 +158,9 @@
                     android:layout_marginStart="20dp"
                     android:fontFamily="@font/poppins_semibold"
                     android:gravity="center_vertical"
-                    android:text="curecompanion@gmail.com"
+                    android:text="CureCompanion@gmail.com"
                     android:textSize="15sp" />
+
             </LinearLayout>
 
             <View
@@ -185,15 +170,16 @@
                 android:layout_marginEnd="20dp"
                 android:background="@color/abu" />
 
-            <Button
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                android:text="Contact Us"
-                android:textAllCaps="false"
+                android:layout_gravity="center"
                 android:textColor="@color/blue_main"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center_vertical"
+                android:text="Contact Us"
+                android:textSize="25sp" />
+
         </LinearLayout>
 
     </LinearLayout>

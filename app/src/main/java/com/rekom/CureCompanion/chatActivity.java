@@ -11,6 +11,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -22,12 +25,14 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 public class chatActivity extends AppCompatActivity {
     TabLayout tabLayout;
-    TabItem mchat, mcall, mstatus;
+    TabItem mchat, mMedicine, mTeam;
     ViewPager viewPager;
     PagerAdapter pagerAdapter;
     androidx.appcompat.widget.Toolbar mtoolbar;
     FirebaseAuth firebaseAuth;
     FirebaseFirestore firebaseFirestore;
+
+    ImageButton btnProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +41,11 @@ public class chatActivity extends AppCompatActivity {
  
         tabLayout=findViewById(R.id.include);
         mchat=findViewById(R.id.chat);
-        mcall=findViewById(R.id.medicines);
-        mstatus=findViewById(R.id.profile);
+        mMedicine=findViewById(R.id.medicines);
+        mTeam=findViewById(R.id.team);
         viewPager=findViewById(R.id.fragmentcontainer);
+
+        btnProfile = findViewById(R.id.btn_profile_11);
 
         firebaseFirestore=FirebaseFirestore.getInstance();
         firebaseAuth= FirebaseAuth.getInstance();
@@ -51,6 +58,17 @@ public class chatActivity extends AppCompatActivity {
 
         pagerAdapter = new PagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
         viewPager.setAdapter(pagerAdapter);
+
+        //
+        btnProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(chatActivity.this, ProfileActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        //
 
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -76,29 +94,29 @@ public class chatActivity extends AppCompatActivity {
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
     }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.profile:
-                Intent intent = new Intent(chatActivity.this, ProfileActivity.class);
-                startActivity(intent);
-                break;
+//    @Override
+//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+//        switch (item.getItemId()){
+//            case R.id.profile:
+//                Intent intent = new Intent(chatActivity.this, ProfileActivity.class);
+//                startActivity(intent);
+//                break;
+//
+//            case R.id.settings:
+//                Toast.makeText(this, "Setting is clicked", Toast.LENGTH_SHORT).show();
+//                break;
+//        }
+//
+//        return true;
+//    }
 
-            case R.id.settings:
-                Toast.makeText(this, "Setting is clicked", Toast.LENGTH_SHORT).show();
-                break;
-        }
-
-        return true;
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.menu, menu);
-
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        MenuInflater menuInflater = getMenuInflater();
+//        menuInflater.inflate(R.menu.menu, menu);
+//
+//        return true;
+//    }
 
     @Override
     protected void onStop() {

@@ -10,18 +10,28 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:background="@color/white">
 
         <ImageView
             android:id="@+id/myapptext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/logo_long"
             android:layout_gravity="center"
-            >
+            android:src="@drawable/logo_long">
 
         </ImageView>
+
+        <ImageButton
+            android:id="@+id/btn_profile_11"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_person"
+            android:background="@drawable/flag_transparent"
+            />
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -38,6 +48,7 @@
         android:layout_marginTop="5dp"
 
         >
+
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -69,4 +80,6 @@
         android:id="@+id/fragmentcontainer">
 
     </androidx.viewpager.widget.ViewPager>
+
+
 </RelativeLayout>

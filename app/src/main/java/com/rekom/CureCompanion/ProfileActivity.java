@@ -55,23 +55,26 @@ public class ProfileActivity extends AppCompatActivity {
 
         mviewuserimageinimageview = findViewById(R.id.viewuserimageinimageview);
         mviewusername = findViewById(R.id.viewusername);
-        mviewemail = findViewById(R.id.viewemail);
-        mviewdomicile = findViewById(R.id.viewdomicile);
-        mtoolbarofviewprofile = findViewById(R.id.toolbarofviewprofile);
-        mbackbuttonofviewprofile = findViewById(R.id.backbuttonofviewprofile);
+//        mviewemail = findViewById(R.id.viewemail);
+//        mviewdomicile = findViewById(R.id.viewdomicile);
+//        mtoolbarofviewprofile = findViewById(R.id.toolbarofviewprofile);
+//        mbackbuttonofviewprofile = findViewById(R.id.backbuttonofviewprofile);
         mmovetoupdateprofile=findViewById(R.id.moveouttupdateprofile);
         firebaseFirestore = FirebaseFirestore.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseStorage = FirebaseStorage.getInstance();
 
-        setSupportActionBar(mtoolbarofviewprofile);
-        mbackbuttonofviewprofile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+//        setSupportActionBar(mtoolbarofviewprofile);
+//        mbackbuttonofviewprofile.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(ProfileActivity.this, chatActivity.class);
+//                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//                startActivity(intent);
+//                finish();
+//            }
+//        });
 
         storageReference = firebaseStorage.getReference();
         storageReference.child("Images").child(firebaseAuth.getUid()).child("Profile Pic").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
@@ -87,9 +90,9 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 UserProfileModel muserprofile = snapshot.getValue(UserProfileModel.class);
-                mviewusername.setText(muserprofile.getUsername());
-                mviewemail.setText(muserprofile.getEmail());
-                mviewdomicile.setText(muserprofile.getDomicile());
+//                mviewusername.setText(muserprofile.getUsername());
+//                mviewemail.setText(muserprofile.getEmail());
+//                mviewdomicile.setText(muserprofile.getDomicile());
             }
 
 
@@ -131,5 +134,13 @@ public class ProfileActivity extends AppCompatActivity {
                 Toast.makeText( getApplicationContext(),"Now Users is Online",Toast.LENGTH_SHORT).show();
             }
         } );
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent=new Intent(ProfileActivity.this, chatActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
     }
 }

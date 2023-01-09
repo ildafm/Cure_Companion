@@ -178,7 +178,7 @@ public class specificchat extends AppCompatActivity {
                                             } );
                                 }
                             } );
-
+                    messagesAdapter.notifyDataSetChanged();
                     mgetmessage.setText( null );
                 }
             }
