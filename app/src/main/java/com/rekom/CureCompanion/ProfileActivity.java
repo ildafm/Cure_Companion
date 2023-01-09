@@ -2,6 +2,7 @@ package com.rekom.CureCompanion;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -49,6 +50,8 @@ public class ProfileActivity extends AppCompatActivity {
     private String name;
     private Uri imagePath;
     private String ImageUriAccessToken;
+    private CardView mGetUserImage;
+    private static int PICK_IMAGE=123;
 
     ImageView mviewuserimageinimageview;
 
@@ -81,6 +84,7 @@ public class ProfileActivity extends AppCompatActivity {
         firebaseStorage = FirebaseStorage.getInstance();
 
         mProgressBarSetProfile = findViewById(R.id.progress_bar);
+        mGetUserImage = findViewById(R.id.viewuserimage);
 
 //        setSupportActionBar(mtoolbarofviewprofile);
 //        mbackbuttonofviewprofile.setOnClickListener(new View.OnClickListener() {
@@ -116,6 +120,14 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 Toast.makeText(getApplicationContext(), "Failed To Fetch", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        mGetUserImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
+                startActivityForResult(intent, PICK_IMAGE);
             }
         });
 
