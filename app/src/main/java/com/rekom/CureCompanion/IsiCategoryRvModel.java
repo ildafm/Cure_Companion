@@ -12,7 +12,7 @@ public class IsiCategoryRvModel {
     public IsiCategoryRvModel() {
     }
 
-    public IsiCategoryRvModel(String namaObat, String id, String hargaObat, String kategoriObat, String netto, String deksripsi, String image) {
+    public IsiCategoryRvModel(String namaObat, String id, String hargaObat, String netto, String deksripsi, String image) {
         this.namaObat = namaObat;
         this.id = id;
         this.hargaObat = hargaObat;
