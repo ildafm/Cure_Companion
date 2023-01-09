@@ -1,6 +1,7 @@
 package com.rekom.CureCompanion;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -257,6 +258,18 @@ public class ProfileActivity extends AppCompatActivity {
 
     }
 
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if(requestCode==PICK_IMAGE && resultCode==RESULT_OK)
+        {
+            imagePath=data.getData();
+            mviewuserimageinimageview.setImageURI(imagePath);
+        }
+
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -275,5 +288,6 @@ public class ProfileActivity extends AppCompatActivity {
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
         finish();
+
     }
 }

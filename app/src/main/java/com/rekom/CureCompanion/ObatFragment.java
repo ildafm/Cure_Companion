@@ -30,7 +30,6 @@ public class ObatFragment extends Fragment implements UpdateRecyclerView {
         item.add(new CategoryRvModel(R.drawable.injeksi, "Injeksi"));
         item.add(new CategoryRvModel(R.drawable.kapsul, "Kapsul"));
         item.add(new CategoryRvModel(R.drawable.krim, "Krim"));
-        item.add(new CategoryRvModel(R.drawable.liquid, "liquid"));
         item.add(new CategoryRvModel(R.drawable.obat_tetes, "Obat Tetes"));
         item.add(new CategoryRvModel(R.drawable.salep, "Salep"));
         item.add(new CategoryRvModel(R.drawable.serbuk, "Serbuk"));

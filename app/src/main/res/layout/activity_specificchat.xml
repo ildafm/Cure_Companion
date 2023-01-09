@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".specificchat"
-    android:background="@drawable/background_orange"
+    android:background="@drawable/chat_background"
     >
 
     <androidx.appcompat.widget.Toolbar
@@ -83,10 +83,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="-4dp"
         android:padding="5dp">
-
     </androidx.recyclerview.widget.RecyclerView>
-
-
 
     <EditText
         android:id="@+id/getmessage"
@@ -98,6 +95,7 @@
         android:paddingLeft="20dp"
         android:paddingRight="10dp"
         android:textSize="16sp"
+        android:elevation="10dp"
         android:fontFamily="@font/poppins_medium"
         android:background="@drawable/messagebackgroun"
         android:textAlignment="textStart"
@@ -117,6 +115,7 @@
         android:layout_marginLeft="-55dp"
         android:layout_marginBottom="12dp"
         android:backgroundTint="#0D8F80"
+        android:elevation="10dp"
         android:layout_alignParentBottom="true"
         app:cardCornerRadius="45dp"
         >
@@ -126,8 +125,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:background="@color/blue_main"
-            android:backgroundTint="@color/blue_main"
+            android:background="@color/orange_main"
+            android:backgroundTint="@color/orange_main"
             android:padding="5dp"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_baseline_arrow_forward_24"

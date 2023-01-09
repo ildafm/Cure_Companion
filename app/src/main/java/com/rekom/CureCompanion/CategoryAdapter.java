@@ -104,15 +104,9 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Static
                     updateRecyclerView.callback(position, items);
                 }
 
-                //liquid
-                else if(position==3) {
-                    ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
-//                    items.add(new IsiCategoryRvModel("kapsul", "Rp12.000","dss","sss","ssss","sssss",""));
-                    updateRecyclerView.callback(position, items);
-                }
 
                 //Obat Tetes
-                else if(position==4) {
+                else if(position==3) {
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
                     items.add(new IsiCategoryRvModel("Insto", "1","Rp 13.000","7.5ml","Mengatasi kemerahan dan rasa perih pada mata yang disebabkan oleh iritasi ringan karena debu, asap, angin, dan sesudah berenang.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/22192/22192_1638437464.9416__540x540.jpg"));
 
@@ -123,7 +117,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Static
                 }
 
                 //Salep
-                else if(position==5) {
+                else if(position==4) {
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
                     items.add(new IsiCategoryRvModel("Zam-Buk", "1","Rp 15.000","25gr","membantu meredakan memar dan terkilir ringan, gatal akibat gigitan serangga dan nyamuk, serta membantu meredakan rasa nyeri dan gatal-gatal yang berkaitan dengan luka ringan.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/15126/15126_1625195355.0662__540x540.jpg"));
                     items.add(new IsiCategoryRvModel("Kalpanax", "2","Rp 7.000","6gr","mengatasi jamur di kulit seperti panu, kadas, kurap, kutu air hingga ruam popok.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/23373/23373_1667542352.1843__540x540.jpg"));
@@ -133,7 +127,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Static
                 }
 
                 //Serbuk
-                else if(position==6) {
+                else if(position==5) {
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
                     items.add(new IsiCategoryRvModel("Herocyn", "1","Rp 10.000","85gr","mengatasi masalah kulit pada keluarga. Beberapa masalah kulit ini diantaranya adalah biang keringat, gatal-gatal dan iritasi.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/20025/20025_1642390404.6525__540x540.jpg"));
                     items.add(new IsiCategoryRvModel("Thebalis", "2","Rp 56.000","90gr","TheBalis ialah suplemen kesehatan untuk meningkatkan stamina.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/33627/33627_1667808445.4496__540x540.JPG"));
@@ -142,7 +136,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Static
                 }
 
                 //Sirup
-                else if(position==7) {
+                else if(position==6) {
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
                     items.add(new IsiCategoryRvModel("Vicks", "1","Rp.10.000","27ml","Obat demam","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/12387/12387_1635407296.27__540x540.jpg"));
                     items.add(new IsiCategoryRvModel("Combi", "2","Rp.14.100","100ml","Obat batuk berdahak","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/12314/12314_1639556448.8993__540x540.jpg"));
@@ -153,7 +147,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Static
                 }
 
                 //Tablet
-                else if(position==8) {
+                else if(position==7) {
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
 
                     items.add(new IsiCategoryRvModel("Bodrex", "1","Rp 9.118","100g","Obat sakit kepala, sakit gigi, nyeri otot, demam yang berkaitan dengan flu dan masuk angin.", "https://images.tokopedia.net/img/cache/900/product-1/2019/2/1/12048559/12048559_3767017d-81a8-4d59-a6ba-6304b9878bd1_600_600.jpg"));

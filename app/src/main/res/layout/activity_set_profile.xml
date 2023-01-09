@@ -6,27 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".setProfile">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:padding="30dp"
+        >
+
     <TextView
+        android:id="@+id/set"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25sp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
         android:text="Save Your Profile"
-        android:layout_marginBottom="30dp"
-        android:fontFamily="@font/poppins_semibold"
+        android:fontFamily="@font/poppins_bold"
         android:textColor="@color/blue_main"
         android:textStyle="bold"
         android:layout_centerHorizontal="true">
-
     </TextView>
 
-    <androidx.cardview.widget.CardView
+        <View
+            android:layout_width="30dp"
+            android:layout_height="5dp"
+            android:layout_below="@id/set"
+            android:layout_gravity="center"
+            android:background="@drawable/button_blue_bg"
+            android:elevation="5dp" />
+
+        <androidx.cardview.widget.CardView
+        android:id="@+id/getuserimage"
         android:layout_width="130dp"
         android:layout_height="130dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
         android:layout_above="@+id/getusername"
+        android:layout_below="@+id/set"
         android:layout_marginBottom="30dp"
-        android:id="@+id/getuserimage"
-        android:layout_centerHorizontal="true"
         app:cardCornerRadius="130dp"
         >
 
@@ -42,31 +61,31 @@
     </androidx.cardview.widget.CardView>
 
 
-    <EditText
-        android:id="@+id/getusername"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="15dp"
-        android:autofillHints="username"
-        android:background="@drawable/button_edit_text"
-        android:drawableLeft="@drawable/ic_person"
-        android:drawablePadding="10dp"
-        android:fontFamily="@font/poppins_medium"
-        android:hint="Change Your Full Name"
-        android:inputType="text"
-        android:padding="10dp"
-        android:textSize="15sp" />
+        <EditText
+            android:id="@+id/getusername"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+                android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:autofillHints="username"
+            android:background="@drawable/button_edit_text"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Change Your Full Name"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="15sp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/saveprofile"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/getusername"
-        android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="15dp"
@@ -80,10 +99,12 @@
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
         android:layout_below="@+id/saveprofile"
         android:id="@+id/progressbarofsetProfile"
         android:visibility="invisible"
         android:layout_marginTop="30dp">
     </ProgressBar>
+
+    </LinearLayout>
 </RelativeLayout>
