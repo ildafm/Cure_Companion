@@ -10,7 +10,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:background="@drawable/senderchatdrawble"
-        android:id="@+id/layoutformessage">
+        android:id="@+id/layoutformessage"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        >
 
         <TextView
             android:layout_width="wrap_content"

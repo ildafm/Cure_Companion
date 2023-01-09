@@ -4,17 +4,15 @@ public class UserProfileModel {
 
     public String username,userUID;
     public String email;
-    public String number;
     public String domicile;
 
     public UserProfileModel(String name, String uid) {
     }
 
-    public UserProfileModel(String username, String userUID, String email, String number, String domicile) {
+    public UserProfileModel(String username, String userUID, String email, String domicile) {
         this.username = username;
         this.userUID = userUID;
         this.email = email;
-        this.number = number;
         this.domicile = domicile;
     }
 
@@ -40,14 +38,6 @@ public class UserProfileModel {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getNumber() {
-        return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
     }
 
     public String getDomicile() {

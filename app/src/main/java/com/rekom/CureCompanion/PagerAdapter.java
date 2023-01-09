@@ -20,7 +20,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
         switch (position){
             case 0: return new chatFragment();
             case 1: return new ObatFragment();
-            case 2 : return new ProfileFragment();
+            case 2 : return new TeamFragment();
             default: return null;
         }
     }

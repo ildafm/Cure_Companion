@@ -12,25 +12,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="230dp"
-        android:background="@drawable/half_rounded"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@drawable/half_rounded"/>
 
         <TextView
-            android:id="@+id/your_profile"
+            android:id="@+id/our_team"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
             android:fontFamily="@font/poppins_bold"
-            android:text="Your Profile"
+            android:text="Our Team"
             android:textColor="@color/white"
             android:textSize="25sp" />
 
         <View
             android:layout_marginTop="5dp"
-            android:layout_below="@id/your_profile"
+            android:layout_below="@id/our_team"
             android:layout_centerHorizontal="true"
             android:layout_width="30dp"
             android:layout_height="5dp"
@@ -38,14 +38,14 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imageView"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="150dp"
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="30dp"
             android:elevation="3dp"
-            android:src="@drawable/profile"
+            android:src="@drawable/team"
             app:civ_border_color="@android:color/white"
             app:civ_border_width="3dp" />
 
@@ -77,16 +77,15 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/ic_email_24" />
+                    android:src="@drawable/ic_person" />
 
                 <TextView
-                    android:id="@+id/tv_username"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="20dp"
                     android:fontFamily="@font/poppins_semibold"
                     android:gravity="center_vertical"
-                    android:text="curecompanion@cuco.com"
+                    android:text="Diva Putri Kynta 2024250062"
                     android:textSize="15sp" />
             </LinearLayout>
 
@@ -118,7 +117,7 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/ic_phone_24" />
+                    android:src="@drawable/ic_person" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -126,7 +125,7 @@
                     android:layout_marginStart="20dp"
                     android:fontFamily="@font/poppins_semibold"
                     android:gravity="center_vertical"
-                    android:text="+6289 7598 3459"
+                    android:text="Muhammad Fadli 2024250015"
                     android:textSize="15sp" />
             </LinearLayout>
 
@@ -143,16 +142,15 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
-                    android:src="@drawable/ic_key_24" />
+                    android:src="@drawable/ic_person" />
 
                 <TextView
-                    android:id="@+id/iv_pass"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="20dp"
                     android:fontFamily="@font/poppins_semibold"
                     android:gravity="center_vertical"
-                    android:text="+6289 7598 3459"
+                    android:text="Vannes Wijaya	2024250030"
                     android:textSize="15sp" />
             </LinearLayout>
 
@@ -168,7 +166,7 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/address" />
+                    android:src="@drawable/ic_email" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -176,7 +174,7 @@
                     android:layout_marginStart="20dp"
                     android:fontFamily="@font/poppins_semibold"
                     android:gravity="center_vertical"
-                    android:text="Tulungagung, Indonesia"
+                    android:text="curecompanion@gmail.com"
                     android:textSize="15sp" />
             </LinearLayout>
 
@@ -191,7 +189,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
-                android:text="Change Profile"
+                android:text="Contact Us"
                 android:textAllCaps="false"
                 android:textColor="@color/blue_main"
                 android:textSize="18sp"

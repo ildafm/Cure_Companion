@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -28,10 +29,10 @@ import com.squareup.picasso.Picasso;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    EditText mviewusername;
+    EditText mviewusername, mviewemail, mviewdomicile;
     FirebaseAuth firebaseAuth;
     FirebaseDatabase firebaseDatabase;
-    TextView mmovetoupdateprofile;
+    Button mmovetoupdateprofile;
 
     FirebaseFirestore firebaseFirestore;
 
@@ -51,12 +52,15 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
         mviewuserimageinimageview = findViewById(R.id.viewuserimageinimageview);
         mviewusername = findViewById(R.id.viewusername);
-        mmovetoupdateprofile=findViewById(R.id.moveouttupdateprofile);
-        firebaseFirestore = FirebaseFirestore.getInstance();
+        mviewemail = findViewById(R.id.viewemail);
+        mviewdomicile = findViewById(R.id.viewdomicile);
         mtoolbarofviewprofile = findViewById(R.id.toolbarofviewprofile);
         mbackbuttonofviewprofile = findViewById(R.id.backbuttonofviewprofile);
+        mmovetoupdateprofile=findViewById(R.id.moveouttupdateprofile);
+        firebaseFirestore = FirebaseFirestore.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseStorage = FirebaseStorage.getInstance();
@@ -83,9 +87,11 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 UserProfileModel muserprofile = snapshot.getValue(UserProfileModel.class);
-//                mviewusername.setText(muserprofile.getUsername());
                 mviewusername.setText(muserprofile.getUsername());
+                mviewemail.setText(muserprofile.getEmail());
+                mviewdomicile.setText(muserprofile.getDomicile());
             }
+
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {

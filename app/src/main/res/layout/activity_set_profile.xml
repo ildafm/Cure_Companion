@@ -9,11 +9,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:textSize="25sp"
+        android:layout_marginTop="80dp"
         android:text="Save Your Profile"
-        android:layout_above="@+id/getuserimage"
         android:layout_marginBottom="30dp"
-        android:textColor="#25d366"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/blue_main"
         android:textStyle="bold"
         android:layout_centerHorizontal="true">
 
@@ -23,47 +24,58 @@
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_above="@+id/getusername"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="30dp"
         android:id="@+id/getuserimage"
         android:layout_centerHorizontal="true"
         app:cardCornerRadius="130dp"
         >
 
         <ImageView
+            android:id="@+id/getuserimageinimageview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher_background"
-            android:id="@+id/getuserimageinimageview"
-            android:scaleType="centerCrop">
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile">
 
         </ImageView>
 
     </androidx.cardview.widget.CardView>
 
+
     <EditText
         android:id="@+id/getusername"
-        android:layout_width="match_parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_centerInParent="true"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
-        android:hint="Enter Your Name Here"
-        android:inputType="textCapWords">
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:autofillHints="username"
+        android:background="@drawable/button_edit_text"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Change Your Full Name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="15sp" />
 
-    </EditText>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_below="@+id/getusername"
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/saveprofile"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getusername"
         android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_orange_bg"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Save"
+        android:textAllCaps="false"
         android:textColor="@color/white"
-        android:layout_marginTop="50dp"
-        android:text="Save Profile">
-
-    </Button>
+        android:textSize="15sp" />
 
     <ProgressBar
         android:layout_width="wrap_content"
