@@ -88,7 +88,7 @@ public class MessagesAdapter extends RecyclerView.Adapter {
         public SenderViewHolder(@NonNull View itemView) {
             super( itemView );
             textViewmessage=itemView.findViewById( R.id.sendermessage );
-            timeofmessage=itemView.findViewById( R.id.timeofmessage );
+            timeofmessage=itemView.findViewById( R.id.timeofsend );
         }
     }
 
@@ -100,8 +100,8 @@ public class MessagesAdapter extends RecyclerView.Adapter {
 
         public RecieverViewHolder(@NonNull View itemView) {
             super( itemView );
-            textViewmessage=itemView.findViewById( R.id.sendermessage );
-            timeofmessage=itemView.findViewById( R.id.timeofmessage );
+            textViewmessage=itemView.findViewById( R.id.receivermessage );
+            timeofmessage=itemView.findViewById( R.id.timeofreceive );
         }
     }
 }

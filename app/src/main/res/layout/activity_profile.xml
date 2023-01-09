@@ -7,11 +7,12 @@
     tools:context=".ProfileActivity">
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarofviewprofile"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_marginTop="0dp"
         android:background="@color/blue_main"
-        android:id="@+id/toolbarofviewprofile">
+        >
 
         <ImageButton
             android:id="@+id/backbuttonofviewprofile"

@@ -6,11 +6,11 @@
     android:padding="2dp">
 
     <RelativeLayout
+        android:id="@+id/layoutsendmessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:background="@drawable/senderchatdrawble"
-        android:id="@+id/layoutformessage"
         android:padding="5dp"
         android:layout_margin="10dp"
         >
@@ -30,9 +30,9 @@
         </TextView>
 
         <TextView
+            android:id="@+id/timeofsend"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/timeofmessage"
             android:textSize="10sp"
             android:layout_toRightOf="@+id/sendermessage"
             android:layout_marginLeft="-40dp"
