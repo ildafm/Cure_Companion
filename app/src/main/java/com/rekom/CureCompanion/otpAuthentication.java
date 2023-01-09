@@ -49,6 +49,7 @@ public class otpAuthentication extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(otpAuthentication.this, MainActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 

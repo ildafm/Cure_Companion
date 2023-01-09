@@ -99,7 +99,6 @@ public class MainActivity extends AppCompatActivity {
                 codesent = s;
                 Intent intent = new Intent(MainActivity.this, otpAuthentication.class);
                 intent.putExtra("otp", codesent);
-                Toast.makeText(MainActivity.this, codesent, Toast.LENGTH_SHORT).show();
                 startActivity(intent);
                 finish();
             }
