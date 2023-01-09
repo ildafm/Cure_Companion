@@ -53,8 +53,8 @@ public class chatActivity extends AppCompatActivity {
         mtoolbar=findViewById(R.id.toolbar);
         setSupportActionBar(mtoolbar);
 
-        Drawable drawable = ContextCompat.getDrawable(getApplicationContext(), R.drawable.ic_more_vert_24);
-        mtoolbar.setOverflowIcon(drawable);
+//        Drawable drawable = ContextCompat.getDrawable(getApplicationContext(), R.drawable.ic_more_vert_24);
+//        mtoolbar.setOverflowIcon(drawable);
 
         pagerAdapter = new PagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
         viewPager.setAdapter(pagerAdapter);
