@@ -62,73 +62,71 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Static
                 row_index = position;
                 notifyDataSetChanged();
 
+                //injeksi
                 if(position==0){
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
-                    items.add(new IsiCategoryRvModel("kapsul", "Rp12.000","dss","sss","ssss","sssss",R.drawable.kapsul));
+                    items.add(new IsiCategoryRvModel("Bodrex", "1","Rp 20.000","sss","100ml","Obat Sakit Kepala", R.drawable.kapsul));
                     updateRecyclerView.callback(position, items);
 
                 }
 
+                //kapsul
                 else if(position==1){
-
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
-                    items.add(new IsiCategoryRvModel("kapsul", "Rp12.000","dss","sss","ssss","sssss",R.drawable.kapsul));
+                    items.add(new IsiCategoryRvModel("Bodrex", "1","Rp 6.900","kapsul","100g","Obat Sakit Kepala", R.drawable.kapsul));
+
+                    items.add(new IsiCategoryRvModel("Diapet", "2","Rp 4.700","kapsul","15g","Diapet digunakan untuk membantu mengurangi frekuensi buang air besar. Tidak boleh diberikan pada anak dibawah 5 tahun dan penderita harus minum oralit.",R.drawable.kapsul));
+
+                    items.add(new IsiCategoryRvModel("Ambeven", "3","Rp 16.000","kapsul","12g","Ambeven merupakan obat dengan kandungan herbal dalam bentuk kapsul. Obat ini digunakan untuk membantu meringankan gejala wasir. Membantu meringankan gejala wasir.",R.drawable.kapsul));
+
                     updateRecyclerView.callback(position, items);
                 }
 
+                //Krim
                 else if(position==2) {
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
                     items.add(new IsiCategoryRvModel("kapsul", "Rp12.000","dss","sss","ssss","sssss",R.drawable.kapsul));
                     updateRecyclerView.callback(position, items);
                 }
 
+                //liquid
                 else if(position==3) {
-
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
                     items.add(new IsiCategoryRvModel("kapsul", "Rp12.000","dss","sss","ssss","sssss",R.drawable.kapsul));
                     updateRecyclerView.callback(position, items);
                 }
 
+                //Obat Tetes
                 else if(position==4) {
-
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
                     items.add(new IsiCategoryRvModel("kapsul", "Rp12.000","dss","sss","ssss","sssss",R.drawable.kapsul));
                     updateRecyclerView.callback(position, items);
                 }
 
+                //Salep
                 else if(position==5) {
-
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
                     items.add(new IsiCategoryRvModel("kapsul", "Rp12.000","dss","sss","ssss","sssss",R.drawable.kapsul));
                     updateRecyclerView.callback(position, items);
 
                 }
 
+                //Serbuk
                 else if(position==6) {
-
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
                     items.add(new IsiCategoryRvModel("kapsul", "Rp12.000","dss","sss","ssss","sssss",R.drawable.kapsul));
                     updateRecyclerView.callback(position, items);
-
                 }
 
+                //Sirup
                 else if(position==7) {
-
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
                     items.add(new IsiCategoryRvModel("kapsul", "Rp12.000","dss","sss","ssss","sssss",R.drawable.kapsul));
                     updateRecyclerView.callback(position, items);
-
                 }
 
+                //Tablet
                 else if(position==8) {
-
-                    ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
-                    items.add(new IsiCategoryRvModel("kapsul", "Rp12.000","dss","sss","ssss","sssss",R.drawable.kapsul));
-                    updateRecyclerView.callback(position, items);
-
-                }
-
-                else if(position==9) {
 
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
                     items.add(new IsiCategoryRvModel("kapsul", "Rp12.000","dss","sss","ssss","sssss",R.drawable.kapsul));
