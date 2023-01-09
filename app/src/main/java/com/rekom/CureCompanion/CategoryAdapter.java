@@ -114,18 +114,20 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Static
                 //Obat Tetes
                 else if(position==4) {
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
-                    items.add(new IsiCategoryRvModel("Insto", "1","Rp 13.000","Obat tetes","7,5ml","Mengatasi kemerahan dan rasa perih pada mata yang disebabkan oleh iritasi ringan karena debu, asap, angin, dan sesudah berenang.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/22192/22192_1638437464.9416__540x540.jpg"));
-                    items.add(new IsiCategoryRvModel("Serambi Botani", "2","Rp 245.000","Obat tetes","946ml","Membantu mengobati dan Mencegah penyakit KOLESTEROL, Membantu mengobati dan Mencegah ASAM URAT,Membantu pencernaan dan keseimbangan pH  ","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/25749/25749_1650727684.4__540x540.jpg"));
-                    items.add(new IsiCategoryRvModel("Betadine", "3","Rp 12.000","Obat tetes","15ml","Obat yang berfungsi sebagai antiseptik pada luka untuk membunuh kuman penyebab infeksi","https://s4.bukalapak.com/img/4100692772/s-1000-1000/Betadine_solution_15_ml_15ml_betadin_antiseptik_15ml.jpg"));
+                    items.add(new IsiCategoryRvModel("Insto", "1","Rp 13.000","7.5ml","Mengatasi kemerahan dan rasa perih pada mata yang disebabkan oleh iritasi ringan karena debu, asap, angin, dan sesudah berenang.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/22192/22192_1638437464.9416__540x540.jpg"));
+
+                    items.add(new IsiCategoryRvModel("Serambi Botani", "2","Rp 245.000","946ml","Membantu mengobati dan Mencegah penyakit KOLESTEROL, Membantu mengobati dan Mencegah ASAM URAT,Membantu pencernaan dan keseimbangan pH  ","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/25749/25749_1650727684.4__540x540.jpg"));
+
+                    items.add(new IsiCategoryRvModel("Betadine", "3","Rp 12.000","15ml","Obat yang berfungsi sebagai antiseptik pada luka untuk membunuh kuman penyebab infeksi","https://s4.bukalapak.com/img/4100692772/s-1000-1000/Betadine_solution_15_ml_15ml_betadin_antiseptik_15ml.jpg"));
                     updateRecyclerView.callback(position, items);
                 }
 
                 //Salep
                 else if(position==5) {
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
-                    items.add(new IsiCategoryRvModel("Zam-Buk", "1","Rp 15.000","salep","25gr","membantu meredakan memar dan terkilir ringan, gatal akibat gigitan serangga dan nyamuk, serta membantu meredakan rasa nyeri dan gatal-gatal yang berkaitan dengan luka ringan.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/15126/15126_1625195355.0662__540x540.jpg"));
-                    items.add(new IsiCategoryRvModel("Kalpanax", "2","Rp 7.000","salep","6gr","mengatasi jamur di kulit seperti panu, kadas, kurap, kutu air hingga ruam popok.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/23373/23373_1667542352.1843__540x540.jpg"));
-                    items.add(new IsiCategoryRvModel("Ichtiyol", "3","Rp 8.000","salep","15gr","Obat salep ini berfungsi sebagai antiseptik untuk mengatasi penyakit bisul. Tak hanya bersifat antibakteri dan antijamur, tetapi juga antiperadangan.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/29268/29268_1667546613.7636__540x540.jpg"));
+                    items.add(new IsiCategoryRvModel("Zam-Buk", "1","Rp 15.000","25gr","membantu meredakan memar dan terkilir ringan, gatal akibat gigitan serangga dan nyamuk, serta membantu meredakan rasa nyeri dan gatal-gatal yang berkaitan dengan luka ringan.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/15126/15126_1625195355.0662__540x540.jpg"));
+                    items.add(new IsiCategoryRvModel("Kalpanax", "2","Rp 7.000","6gr","mengatasi jamur di kulit seperti panu, kadas, kurap, kutu air hingga ruam popok.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/23373/23373_1667542352.1843__540x540.jpg"));
+                    items.add(new IsiCategoryRvModel("Ichtiyol", "3","Rp 8.000","15gr","Obat salep ini berfungsi sebagai antiseptik untuk mengatasi penyakit bisul. Tak hanya bersifat antibakteri dan antijamur, tetapi juga antiperadangan.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/29268/29268_1667546613.7636__540x540.jpg"));
                     updateRecyclerView.callback(position, items);
 
                 }
@@ -133,18 +135,18 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Static
                 //Serbuk
                 else if(position==6) {
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
-                    items.add(new IsiCategoryRvModel("Herocyn", "1","Rp 10.000","serbuk","85gr","mengatasi masalah kulit pada keluarga. Beberapa masalah kulit ini diantaranya adalah biang keringat, gatal-gatal dan iritasi.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/20025/20025_1642390404.6525__540x540.jpg"));
-                    items.add(new IsiCategoryRvModel("Thebalis", "2","Rp 56.000","serbuk","90gr","TheBalis ialah suplemen kesehatan untuk meningkatkan stamina.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/33627/33627_1667808445.4496__540x540.JPG"));
-                    items.add(new IsiCategoryRvModel("Hemaviton", "3","Rp 5000","serbuk","3gr","Minuman supplemen bervitamin dalam bentuk serbuk yang menyegarkan untuk menjaga stamina pada saat berolahraga dan bekerja keras.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/15736/15736_1630058551.0287__540x540.jpg"));
+                    items.add(new IsiCategoryRvModel("Herocyn", "1","Rp 10.000","85gr","mengatasi masalah kulit pada keluarga. Beberapa masalah kulit ini diantaranya adalah biang keringat, gatal-gatal dan iritasi.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/20025/20025_1642390404.6525__540x540.jpg"));
+                    items.add(new IsiCategoryRvModel("Thebalis", "2","Rp 56.000","90gr","TheBalis ialah suplemen kesehatan untuk meningkatkan stamina.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/33627/33627_1667808445.4496__540x540.JPG"));
+                    items.add(new IsiCategoryRvModel("Hemaviton", "3","Rp 5000","3gr","Minuman supplemen bervitamin dalam bentuk serbuk yang menyegarkan untuk menjaga stamina pada saat berolahraga dan bekerja keras.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/15736/15736_1630058551.0287__540x540.jpg"));
                     updateRecyclerView.callback(position, items);
                 }
 
                 //Sirup
                 else if(position==7) {
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
-                    items.add(new IsiCategoryRvModel("Vicks", "1","Rp.10.000","sirup","27ml","Obat demam","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/12387/12387_1635407296.27__540x540.jpg"));
-                    items.add(new IsiCategoryRvModel("Combi", "2","Rp.14.100","sirup","100ml","Obat batuk berdahak","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/12314/12314_1639556448.8993__540x540.jpg"));
-                    items.add(new IsiCategoryRvModel("Tempra Forte Jeruk", "3","Rp.52.000","sirup","60ml","Obat untuk meringankan rasa sakit seperti sakit gigi, sakit kepala, dan menurunkan demam.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/10644/10644_1662649752.6042__540x540.jpg"));
+                    items.add(new IsiCategoryRvModel("Vicks", "1","Rp.10.000","27ml","Obat demam","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/12387/12387_1635407296.27__540x540.jpg"));
+                    items.add(new IsiCategoryRvModel("Combi", "2","Rp.14.100","100ml","Obat batuk berdahak","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/12314/12314_1639556448.8993__540x540.jpg"));
+                    items.add(new IsiCategoryRvModel("Tempra Forte Jeruk", "3","Rp.52.000","60ml","Obat untuk meringankan rasa sakit seperti sakit gigi, sakit kepala, dan menurunkan demam.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/10644/10644_1662649752.6042__540x540.jpg"));
 
 
                     updateRecyclerView.callback(position, items);
