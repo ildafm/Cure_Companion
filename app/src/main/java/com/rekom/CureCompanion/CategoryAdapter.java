@@ -51,7 +51,9 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Static
         if (check){
 
             ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
-            items.add(new IsiCategoryRvModel("kapsul", "Rp12.000","dss","sss","ssss","sssss",""));
+
+            items.add(new IsiCategoryRvModel("Streptomycin", "1","Rp 47.500","52g","Streptomycin adalah obat antibiotik untuk mengatasi tuberkulosis dan penyakit infeksi bakteri lain, seperti tularemia, endokarditis bakteri, pes (plague), brucellosis, meningitis, pneumonia, atau infeksi saluran kemih.","https://storage.googleapis.com/rxstorage/Product/large/Apotek_Online_Farmaku_com_Streptomycin_Sulfate_Meiji.jpg"));
+
             updateRecyclerView.callback(position, items);
             check = false;
         }
@@ -65,7 +67,14 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Static
                 //injeksi
                 if(position==0){
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
-                    items.add(new IsiCategoryRvModel("Amplodipine", "1","Rp 47.500","Injeksi","52g","Amlodipine bermanfaat untuk menurunkan tekanan darah tinggi, membantu mencegah stroke, serangan jantung, dan masalah ginjal.",""));
+
+                    items.add(new IsiCategoryRvModel("Streptomycin", "1","Rp 47.500","52g","Streptomycin adalah obat antibiotik untuk mengatasi tuberkulosis dan penyakit infeksi bakteri lain, seperti tularemia, endokarditis bakteri, pes (plague), brucellosis, meningitis, pneumonia, atau infeksi saluran kemih.","https://storage.googleapis.com/rxstorage/Product/large/Apotek_Online_Farmaku_com_Streptomycin_Sulfate_Meiji.jpg"));
+
+                    items.add(new IsiCategoryRvModel("Vaksin Influenza", "2","Rp 397.500","10g","Vaksin influenza merupakan vaksin yang mampu melindungi Anda dari penyakit flu. Vaksin ini sebaiknya diberikan setiap satu tahun sekali. Meski merupakan penyakit ringan, flu nyatanya juga bisa menimbulkan masalah besar bagi sebagian orang.","https://cdn.hellosehat.com/2019/07/jenis-vaksin-influenza.jpg"));
+
+                    items.add(new IsiCategoryRvModel("Penicillin G Procaine", "3","","","Penicillin G procaine atau procaine benzylpenicillin adalah obat antibiotik untuk menangani infeksi bakteri, seperti anthrax, sifilis, atau infeksi Streptococcus beta-hemolitik grup A, atau infeksi Staphylococcus.","https://storage.googleapis.com/rxstorage/Product/large/Apotek_Online_Farmaku_com_Penicillin-G_PPC.jpg"));
+
+
                     updateRecyclerView.callback(position, items);
 
                 }
@@ -73,11 +82,11 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Static
                 //kapsul
                 else if(position==1){
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
-                    items.add(new IsiCategoryRvModel("Bodrex", "1","Rp 6.900","kapsul","100g","Obat Sakit Kepala","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/20407/20407_1640922062.3959__540x540.jpg"));
+                    items.add(new IsiCategoryRvModel("Diapet", "1","Rp 4.700","15g","Diapet digunakan untuk membantu mengurangi frekuensi buang air besar. Tidak boleh diberikan pada anak dibawah 5 tahun dan penderita harus minum oralit.", "https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/22203/22203_1639731900.0222__540x540.jpg"));
 
-                    items.add(new IsiCategoryRvModel("Diapet", "2","Rp 4.700","kapsul","15g","Diapet digunakan untuk membantu mengurangi frekuensi buang air besar. Tidak boleh diberikan pada anak dibawah 5 tahun dan penderita harus minum oralit.",""));
+                    items.add(new IsiCategoryRvModel("Ambeven", "2","Rp 16.000","12g","Ambeven merupakan obat dengan kandungan herbal dalam bentuk kapsul. Obat ini digunakan untuk membantu meringankan gejala wasir. Membantu meringankan gejala wasir.", "https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/20393/20393_1639636173.1324__540x540.jpg"));
 
-                    items.add(new IsiCategoryRvModel("Ambeven", "3","Rp 16.000","kapsul","12g","Ambeven merupakan obat dengan kandungan herbal dalam bentuk kapsul. Obat ini digunakan untuk membantu meringankan gejala wasir. Membantu meringankan gejala wasir.",""));
+                    items.add(new IsiCategoryRvModel("Alaxan FR", "3","Rp 16.000","12g","ALAXAN FR 10 KAPSUL adalah Kapsul Fast Release (FR) yang bekerja cepat untuk meredakan nyeri otot di leher, pundak, punggung, sakit pinggang, paha dan kaki, serta nyeri haid dan sakit gigi", "https://cdn.shopify.com/s/files/1/0479/7068/0981/products/df9cdb9652fd4e95e476d17ebf2fb180_1_1024x1024@2x.jpg"));
 
                     updateRecyclerView.callback(position, items);
                 }
@@ -85,7 +94,13 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Static
                 //Krim
                 else if(position==2) {
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
-//                    items.add(new IsiCategoryRvModel("kapsul", "Rp12.000","dss","sss","ssss","sssss",""));
+
+                    items.add(new IsiCategoryRvModel("Fungiderm", "1","Rp30.000","250g","Fungiderm cream digunakan untuk mengatasi dermatomikosis atau infeksi kulit akibat jamur seperti gatal, kutu air, panu, infeksi jamur di kulit kepala, kurap,kandidiasis pada kulit dan kuku.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/10817/10817_1618558569.166__540x540.jpg"));
+
+                    items.add(new IsiCategoryRvModel("Daktarin", "2","Rp30.000","200g","Daktarin cream merupakan sediaan topikal atau Krim Anti Jamur yang tiap gram mengandung zat aktif Miconazole Nitrat 20 mg.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/10779/10779_1618822091.2184__540x540.jpg"));
+
+                    items.add(new IsiCategoryRvModel("Canesten", "3","Rp45.000","19g","Canesten cream adalah krim yang mengandung Clotrimazole. Obat ini digunakan untuk mengatasi jamur pada kulit, panu, kadas/kurap, kutu air, dan ruam popok.","https://kalcare.s3-ap-southeast-1.amazonaws.com/moch4/uploads/product/23543/23543_1649042726.1487__540x540.jpg"));
+
                     updateRecyclerView.callback(position, items);
                 }
 
@@ -127,9 +142,15 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Static
 
                 //Tablet
                 else if(position==8) {
-
                     ArrayList<IsiCategoryRvModel> items = new ArrayList<IsiCategoryRvModel>();
-//                    items.add(new IsiCategoryRvModel("kapsul", "Rp12.000","dss","sss","ssss","sssss",""));
+
+                    items.add(new IsiCategoryRvModel("Bodrex", "1","Rp 9.118","100g","Obat sakit kepala, sakit gigi, nyeri otot, demam yang berkaitan dengan flu dan masuk angin.", "https://images.tokopedia.net/img/cache/900/product-1/2019/2/1/12048559/12048559_3767017d-81a8-4d59-a6ba-6304b9878bd1_600_600.jpg"));
+
+                    items.add(new IsiCategoryRvModel("Mylanta", "2","Rp 20.372","200g","Obat ini digunakan untuk mengurangi gejala-gejala yang berhubungan dengan kelebihan asam lambung, gastritis, tukak lambung, tukak usus 12 jari, dengan gejala-gejala seperti mual, nyeri lambung, nyeri ulu hati.", "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/7/20/7dc72b0b-7daf-42ee-8c71-9a006d05b0d1.jpg"));
+
+                    items.add(new IsiCategoryRvModel("Promag", "3","Rp 7.600","50g","Promag merupakan obat dengan kandungan Hydrotalcite, Mg(OH)2, Simethicone dalam bentuk tablet. Obat ini digunakan untuk mengurangi gejala-gejala yang berhubungan dengan kelebihan asam lambung, gastritis, tukak lambung, tukak usus 12 jari.", "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/1/14/0c835d9a-9904-444d-b155-0af4385534f3.jpg"));
+
+
                     updateRecyclerView.callback(position, items);
 
                 }
